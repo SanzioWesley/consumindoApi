@@ -19,5 +19,5 @@ git clone https://github.com/SanzioWesley/consumindoApi.git
 cd consumindoApi
 npm install
 
-Executar o comando `npm start`
+Executar o comando `nodemon server`
 ```
