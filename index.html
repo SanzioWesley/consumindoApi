@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Consumindo Api</title>
+</head>
+
+<body>
+    <h1>Testando</h1>
+
+    <!-- <p id="dem"></p> -->
+    <div id="demo"></div>
+
+    <script>
+        var num = Array.from({
+            length: 100
+        }, (_, i) => i + 1);
+
+        function testDiv(num) {
+            return num.map((n, i) => {
+                if (n % 3 == 0 && n % 5 == 0) {
+                    return "<br/> " + n + "-> FizzBuzz";
+                } else if (n % 3 == 0) {
+                    return "<br/> " + n + "->Fizz ";
+                } else if (n % 5 == 0) {
+                    return "<br/> " + n + "-> Buzz ";
+                }
+                return "<br/> " + n;
+            })
+        }
+        document.getElementById("demo").innerHTML = "<br/>" + testDiv(num)
+    </script>
+</body>
+
+</html>
