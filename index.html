@@ -18,16 +18,17 @@
 
         function testDiv(num) {
             return num.map((n, i) => {
-                if (n % 3 == 0 && n % 5 == 0) {
-                    return "<br/> " + n + "-> FizzBuzz";
-                } else if (n % 3 == 0) {
+                if (n % 3 == 0) {
                     return "<br/> " + n + "->Fizz ";
                 } else if (n % 5 == 0) {
                     return "<br/> " + n + "-> Buzz ";
+                } else if (n % 3 == 0 && n % 5 == 0) {
+                    return "<br/> " + n + "-> FizzBuzz";
                 }
                 return "<br/> " + n;
             })
         }
+
         document.getElementById("demo").innerHTML = "<br/>" + testDiv(num)
     </script>
 </body>
