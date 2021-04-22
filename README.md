@@ -20,4 +20,8 @@ cd consumindoApi
 npm install
 
 Executar o comando `nodemon server`
+
+criar um banco de dados com o nome dbConnection no mysql, mudar a senha no arquivo dbConnection.js pra senha local do mysql
+
+Abrir outro terminal digitar o comando `config` e executar o arquivo com o comando `nodemon dbConnection` 
 ```
