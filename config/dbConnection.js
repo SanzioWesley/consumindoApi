@@ -4,14 +4,15 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "swesleyy",
-    // database: "dbConnection"
+    database: "dbConnection"
 });
 
 con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
-    con.query("CREATE DATABASE dbConnection", function(err, result) {
+    var sql = "CREATE TABLE usuario (email VARCHAR(255), n int, result VARCHAR(15))";
+    con.query(sql, function(err, result) {
         if (err) throw err;
-        console.log("Database created");
+        console.log("Table created");
     });
 });
